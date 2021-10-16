@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Split Screen</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="h-full lg:h-96 flex flex-col lg:flex-row w-full bg-white overflow-hidden divide-y divide-gray-50 lg:divide-y-0 lg:divide-x">
+      <div class="group transition-all duration-700 ease-in-out w-full lg:w-1/4 flex-1 hover:flex-grow-5 px-4 py-5 sm:p-6 relative transform lg:-skew-x-20 lg:-ml-24 overflow-hidden">
+        <div class="absolute inset-0 transform lg:skew-x-20 lg:-mr-24">
+          <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80" alt="At Work">
+          <div class="absolute inset-0 bg-indigo-500 mix-blend-multiply opacity-75"></div>
+        </div>
+        <div class="group-hover:-translate-x-0 transition-all duration-300 ease-in-out delay-500 transform translate-x-full absolute w-full lg:w-2/3 h-3/4 sm:h-4/6 lg:h-full bottom-0 left-0 lg:left-auto lg:right-0 lg:top-0 bg-black mix-blend-multiply opacity-75"></div>
+        <div class="group-hover:hidden transition-all duration-700 group-hover:delay-5000 ease-in-out relative flex flex-col h-full justify-center items-center transform lg:skew-x-20 lg:ml-24">
+          <div class="flex text-2xl font-semibold text-white">
+            Split One
+          </div>
+        </div>
+        <div class="group-hover:opacity-100 group-hover:scale-100 transform opacity-0 scale-0 grid grid-cols-3 transition-all duration-300 ease-in-out delay-500 relative h-full space-x-4 space-y-10 lg:space-y-0 items-center lg:skew-x-20 lg:ml-24">
+          <div class="col-span-3 lg:col-span-1 flex flex-auto justify-center lg:justify-start w-full lg:w-32 text-2xl font-semibold text-white">
+            Split One
+          </div>
+          <div class="col-span-3 lg:col-span-2 relative space-y-2 flex-auto lg:space-y-0 lg:grid lg:grid-cols-1 lg:grid-rows-3 lg:grid-flow-col lg:gap-x-6 lg:gap-y-10 lg:gap-x-8">
+            <div class="flex flex-col justify-end">
+              <h3 class="text-2xl leading-6 font-semibold text-white">
+                Lorem ipsum dolor
+              </h3>
+            </div>
+            <p class="text-base leading-6 font-bold text-white text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="cursor-pointer text-base leading-6 font-bold text-white underline">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group transition-all duration-700 ease-in-out w-full lg:w-1/4 flex-1 hover:flex-grow-5 px-4 py-5 sm:p-6 relative transform lg:-skew-x-20 overflow-hidden">
+        <div class="absolute inset-0 transform lg:skew-x-20 lg:-mx-24">
+          <img class="h-full w-full object-cover object-center" src="https://images.unsplash.com/photo-1614926857083-7be149266cda?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=512&q=80" alt="">
+          <div class="absolute inset-0 bg-blue-500 mix-blend-multiply opacity-75"></div>
+        </div>
+        <div class="group-hover:-translate-x-0 transition-all duration-300 ease-in-out delay-500 transform translate-x-full absolute w-full lg:w-3/4 h-3/4 sm:h-4/6 lg:h-full bottom-0 left-0 lg:left-auto lg:right-0 lg:top-0 bg-black mix-blend-multiply opacity-75"></div>
+        <div class="group-hover:hidden transition-all duration-700 ease-in-out relative flex flex-col h-full justify-center items-center transform lg:skew-x-20">
+          <div class="flex text-2xl font-semibold text-white">
+            Split Two
+          </div>
+        </div>
+        <div class="group-hover:opacity-100 group-hover:scale-100 transform opacity-0 scale-0 grid grid-cols-3 transition-all duration-300 ease-in-out delay-500 relative h-full space-x-4 space-y-10 lg:space-y-0 items-center lg:skew-x-20">
+          <div class="col-span-3 lg:col-span-1 flex flex-auto justify-center w-full lg:w-32 text-2xl font-semibold text-white">
+            Split Two
+          </div>
+          <div class="col-span-3 lg:col-span-2 relative space-y-2 flex-auto lg:space-y-0 lg:grid lg:grid-cols-1 lg:grid-rows-3 lg:grid-flow-col lg:gap-x-6 lg:gap-y-10 lg:gap-x-8">
+            <div class="flex flex-col justify-end">
+              <h3 class="text-2xl leading-6 font-semibold text-white">
+                Lorem ipsum dolor
+              </h3>
+            </div>
+            <p class="text-base leading-6 font-bold text-white text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="cursor-pointer text-base leading-6 font-bold text-white underline">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group transition-all duration-700 ease-in-out w-full lg:w-1/4 flex-1 hover:flex-grow-5 px-4 py-5 sm:p-6 relative transform lg:-skew-x-20 overflow-hidden">
+        <div class="absolute inset-0 transform lg:skew-x-20 lg:-mx-24">
+          <img class="h-full w-full object-cover object-left" src="https://images.unsplash.com/photo-1633585343497-78cb5db7fb14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
+          <div class="absolute inset-0 bg-purple-500 mix-blend-multiply opacity-75"></div>
+        </div>
+        <div class="group-hover:-translate-x-0 transition-all duration-300 ease-in-out delay-500 transform translate-x-full absolute w-full lg:w-3/4 h-3/4 sm:h-4/6 lg:h-full bottom-0 left-0 lg:left-auto lg:right-0 lg:top-0 bg-black mix-blend-multiply opacity-75"></div>
+        <div class="group-hover:hidden transition-all duration-700 group-hover:delay-5000 ease-in-out relative flex flex-col h-full justify-center items-center transform lg:skew-x-20">
+          <div class="flex text-2xl font-semibold text-white">
+            Split Three
+          </div>
+        </div>
+        <div class="group-hover:opacity-100 group-hover:scale-100 transform opacity-0 scale-0 grid grid-cols-3 transition-all duration-300 ease-in-out delay-500 relative h-full space-x-4 space-y-10 lg:space-y-0 items-center lg:skew-x-20">
+          <div class="col-span-3 lg:col-span-1 flex flex-auto justify-center w-full lg:w-32 text-2xl font-semibold text-white">
+            Split Three
+          </div>
+          <div class="col-span-3 lg:col-span-2 relative space-y-2 flex-auto lg:space-y-0 lg:grid lg:grid-cols-1 lg:grid-rows-3 lg:grid-flow-col lg:gap-x-6 lg:gap-y-10 lg:gap-x-8">
+            <div class="flex flex-col justify-end">
+              <h3 class="text-2xl leading-6 font-semibold text-white">
+                Lorem ipsum dolor
+              </h3>
+            </div>
+            <p class="text-base leading-6 font-bold text-white text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="cursor-pointer text-base leading-6 font-bold text-white underline">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group transition-all duration-700 ease-in-out w-full lg:w-1/4 flex-1 hover:flex-grow-5 px-4 py-5 sm:p-6 relative transform lg:-skew-x-20 lg:-mr-24 overflow-hidden">
+        <div class="absolute inset-0 transform lg:skew-x-20 lg:-ml-24">
+          <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80" alt="">
+          <div class="absolute inset-0 bg-yellow-500 mix-blend-multiply opacity-75"></div>
+        </div>
+        <div class="group-hover:-translate-x-0 transition-all duration-300 ease-in-out delay-500 transform translate-x-full absolute w-full lg:w-3/4 h-3/4 sm:h-4/6 lg:h-full bottom-0 left-0 lg:left-auto lg:right-0 lg:top-0 bg-black mix-blend-multiply opacity-75"></div>
+        <div class="group-hover:hidden transition-all duration-700 group-hover:delay-5000 ease-in-out relative flex flex-col h-full justify-center items-center transform lg:skew-x-20 lg:mr-24">
+          <div class="flex text-2xl font-semibold text-white">
+            Split Four
+          </div>
+        </div>
+        <div class="group-hover:opacity-100 group-hover:scale-100 transform opacity-0 scale-0 grid grid-cols-3 transition-all duration-300 ease-in-out delay-500 relative h-full space-x-4 space-y-10 lg:space-y-0 items-center lg:skew-x-20 lg:mr-24">
+          <div class="col-span-3 lg:col-span-1 flex flex-auto justify-center w-full lg:w-44 text-2xl font-semibold text-white">
+            Split Four
+          </div>
+          <div class="col-span-3 lg:col-span-2 relative space-y-2 flex-auto lg:space-y-0 lg:grid lg:grid-cols-1 lg:grid-rows-3 lg:grid-flow-col lg:gap-x-6 lg:gap-y-10 lg:gap-x-8">
+            <div class="flex flex-col justify-end">
+              <h3 class="text-2xl leading-6 font-semibold text-white">
+                Lorem ipsum dolor
+              </h3>
+            </div>
+            <p class="text-base leading-6 font-bold text-white text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="cursor-pointer text-base leading-6 font-bold text-white underline">
+              Learn More
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
