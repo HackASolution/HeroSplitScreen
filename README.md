@@ -9,3 +9,9 @@ Static Html and Tailwind Css Component
 3. You can also change extended config as necessary in tailwind.config.js
 4. Copy HTML code from index.html. Change CSS classes as necessary.
 5. Change placeholder texts and images as necessary.
+
+### To check demo
+1. Clone this project.
+2. Go to project directory
+3. npm install
+4. npm run dev
